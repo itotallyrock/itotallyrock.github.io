@@ -199,7 +199,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<form action="//forms.brace.io/game2gaming.rock@gmail.com">
+					<form id="contactForm" novalidate>
 						<div class="row control-group">
 							<div class="form-group col-xs-12 floating-label-form-group controls">
 								<label>Subject</label>
@@ -233,9 +233,22 @@
 								<input type="hidden" class="form-control" name="_subject" value="New submission!" />
 							</div>
 						</div>
+						<input type="hidden" name="_next" value="//site.io/thanks.html" />
 						<div class="row">
-							<div class="form-group col-xs-12">
-								<input type="submit" class="btn btn-success btn-lg" value="Send">
+							<div class="form-group col-xs-9">
+								<div class="bs-callout bs-callout-warning">
+									<h4>Warning</h4>
+									<p>
+										By submitting this form you
+										<ul>
+											<li>Will agree that we may respond to your email.</li>
+											<li>Your message my not be sent based on spam filters.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+							<div class="form-group col-xs-3">
+								<input type="submit" class="btn btn-success btn-lg" value="Send" style="margin-top: 20%;">
 							</div>
 						</div>
 					</form>
@@ -543,7 +556,7 @@
 							<p>I do this is a side project but it is starting to take away from other things.  You can help keep it going.  Plus if I get <strong>more</strong> donations I will be able to put more work into this and make it much better</p>
 							<div class="row">
 								<div class="col-lg-1 col-lg-offset-3 text-center">
-									<a href="#" onclick="window.prompt('Copy to clipboard: Ctrl+C, Enter', '17ZQtEFHyXDdaryq368jiNw8PCgZBfoQpY');return false;" class="btn btn-success" style="min-width:120px;"><i class="fa fa-btc"></i> Bitcoin</a>
+									<a data-toggle="tooltip" data-placement="left" title="Tooltip on left" href="#" onclick="window.prompt('Copy to clipboard: Ctrl+C, Enter', '17ZQtEFHyXDdaryq368jiNw8PCgZBfoQpY');return false;" class="btn btn-success" style="min-width:120px;"><i class="fa fa-btc"></i> Bitcoin</a>
 								</div>
 								<div class="col-lg-6 col-lg-offset-1">
 									<p>Get the Bitcoin code or click <a href="bitcoin:17ZQtEFHyXDdaryq368jiNw8PCgZBfoQpY?label=pluggedIn">this</a></p>

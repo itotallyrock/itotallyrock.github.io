@@ -9,8 +9,8 @@ $(function() {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var name = $("input#name").val();
+            var subject = $("input#subject").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -18,11 +18,11 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "//forms.brace.io/game2gaming.rock@gmail.com",
                 type: "POST",
                 data: {
                     name: name,
-                    phone: phone,
+                    subject: subject,
                     email: email,
                     message: message
                 },
@@ -67,4 +67,11 @@ $(function() {
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
     $('#success').html('');
+});
+
+$.ajax({
+    url: "//forms.brace.io/you@email.com", 
+    method: "POST",
+    data: {message: "hello!"},
+    dataType: "json"
 });
