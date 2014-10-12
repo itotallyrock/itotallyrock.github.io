@@ -24,6 +24,12 @@ $(function() {
     }).on("blur", ".floating-label-form-group", function() {
         $(this).removeClass("floating-label-form-group-with-focus");
     });
+	
+	if($(window).width()<1000){
+		$("#license")[0].innerText="GNU GPL3"
+	}else{
+		$("#license")[0].innerText="GNU GENERAL PUBLIC LICENSE Version 3";
+	}
 });
 
 // Highlight the top nav as scrolling occurs
@@ -34,4 +40,12 @@ $('body').scrollspy({
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
+});
+
+$(window).resize(function(){
+	if($(window).width()<1000){
+		$("#license")[0].innerText="GNU GPL3"
+	}else{
+		$("#license")[0].innerText="GNU GENERAL PUBLIC LICENSE Version 3";
+	}
 });

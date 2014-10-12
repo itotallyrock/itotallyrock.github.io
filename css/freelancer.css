@@ -93,6 +93,15 @@ header .container {
 header img {
     display: block;
     margin: 0 auto 20px;
+	-webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+#profileImg.img-tilted{
+	-ms-transform: rotate(7deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(7deg);
 }
 
 header .intro-text .name {

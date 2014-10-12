@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Freelancer - Start Bootstrap Theme</title>
+	<title>PluggedIn - A PlugDJ Addon</title>
 
 	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
 	<link href="css/freelancer.css" rel="stylesheet">
 
 	<!-- Custom Fonts -->
-	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -250,8 +250,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="footer-col col-md-4">
-						<h3>Location</h3>
-						<p>1234 Somewhere<br>Some City, AS 12345</p>
+						<h3>Drag To Bookmarks</h3>
+						<a href="javascript:alert('tempScript');" class="btn btn-info btn-large">pluggedIn</a>
 					</div>
 					<div class="footer-col col-md-4">
 						<h3>Around the Web</h3>
@@ -263,10 +263,10 @@
 								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
 							</li>
 							<li>
-								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+								<a href="https://twitter.com/pluggedIn" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
 							</li>
-							<li>
-								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+							<li data-toggle="tooltip" data-placement="top" title="Donate">
+								<a href="#donate1" data-toggle="modal" class="btn-social btn-outline"><i class="fa fa-dollar"></i></a>
 							</li>
 							<li>
 								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
@@ -287,7 +287,7 @@
 						Copyright &copy; 2014 <a href="" id="license">GNU GENERAL PUBLIC LICENSE Version 3</a>
 					</div>
 					<div class="col-xs-6 text-right">
-						Powered by <a target="_blank" href="http://jquery.com">jQuery</a>
+						Powered by <a target="_blank" href="http://jquery.com">jQuery</a> | Template by <a href="http://startbootstrap.com/" target="_blank">StartBootstrap</a>
 					</div>
 				</div>
 			</div>
@@ -517,6 +517,54 @@
 									</strong>
 								</li>
 							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="portfolio-modal modal fade" id="donate1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Donate</h2>
+							<hr class="star-primary">
+							<p>Donations are much appreciated and will goto a good cause, to help continue to fund the project.  And you get a <strong>cool chat icon</strong> for all other pluggedIn users.</p>
+							<p>I do this is a side project but it is starting to take away from other things.  You can help keep it going.  Plus if I get <strong>more</strong> donations I will be able to put more work into this and make it much better</p>
+							<div class="row">
+								<div class="col-lg-1 col-lg-offset-3 text-center">
+									<a href="#" onclick="window.prompt('Copy to clipboard: Ctrl+C, Enter', 'RandomBitCodeHere');return false;" class="btn btn-success" style="min-width:120px;"><i class="fa fa-btc"></i> Bitcoin</a>
+								</div>
+								<div class="col-lg-6 col-lg-offset-1">
+									<p>Get the Bitcoin payment code</p>
+								</div>
+							</div>
+							<div class="row" style="margin-top:10px;">
+								<div class="col-lg-1 col-lg-offset-3 text-center">
+									<a href="https://paypal.com" class="btn btn-success" style="min-width:120px;"><i class="fa fa-paypal"></i> PayPal</a>
+								</div>
+								<div class="col-lg-6 col-lg-offset-1">
+									<p>Goto our PayPal</p>
+								</div>
+							</div>
+							<div class="row" style="margin-top:10px;">
+								<div class="col-lg-1 col-lg-offset-3 text-center">
+									<a href="https://google.com/wallet" class="btn btn-success" style="min-width:120px;"><i class="fa fa-google-wallet"></i> G Wallet</a>
+								</div>
+								<div class="col-lg-6 col-lg-offset-1">
+									<p>Use Google Wallet</p>
+								</div>
+							</div>
 							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
 						</div>
 					</div>
