@@ -30,6 +30,7 @@ $(function() {
 	}else{
 		$("#license")[0].innerText="GNU GENERAL PUBLIC LICENSE Version 3";
 	}
+	$("[data-toggle='tooltip']").tooltip();
 });
 
 // Highlight the top nav as scrolling occurs
