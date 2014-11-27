@@ -51,7 +51,7 @@
 			<a href="javascript:$.getScript('https://cdn.rawgit.com/itotallyrock/pluggedIn/master/2478514385ae3fdd14ec13a7415c61c274c7e53a/pluggedIn.js');" onclick="alert('Drag to your bookmarks');return false;" class="btn btn-warning">PluggedIn</a>
 		</blockquote>
 		<blockquote class="bs-callout bs-callout-danger">
-			<h4>Latest Unstable (Cutting Edge)</h4>
+			<h4>Latest Unstable (Cutting Edge) <span style="font-family:monospace;" id="cuttingEdge"></span></h4>
 			<p>Will always be the latest version commited</p>
 			<a href="javascript:(function(){$.getScript('https://rawgit.com/itotallyrock/pluggedIn/master/js/pluggedIn.js');}());" class="btn btn-danger">PluggedIn</a>
 		</blockquote>
@@ -118,13 +118,12 @@
 	</div>
 </body>
 <script>
-	/*var paste = {};
-	var baseURL = "http://pastebin.com/raw.php?i=";
-	paste.get = (function(url){
-		var finalURL = baseURL+url;
-		$.get(finalURL, function(d){
-			
-		});
-	});*/
+	$.ajax({
+		url:"https://rawgit.com/itotallyrock/pluggedIn/master/data.json",
+		async:false,
+		success:function(e){
+			$("#cuttingEdge").text(e.version);
+		}
+	});
 </script>
 </html>
