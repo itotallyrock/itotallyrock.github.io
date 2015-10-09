@@ -1,0 +1,30 @@
+body{
+    background-image: url("http://i.imgur.com/zEHYb4T.jpg");
+    background-size: 100%;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.content.dark a{
+    color: #aaccee;
+}
+
+.content a{
+    
+}
+
+.content{
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.content.dark{
+    border: 1px solid rgb(28, 28, 38);;
+    background-color: rgb(48, 48, 58);
+    color: #fff;
+}
