@@ -1,12 +1,12 @@
 
-.zip
-.psd
-.rar
-.7z
-.tar
-.gz
+*.zip
+*.psd
+*.rar
+*.7z
+*.tar
+*.gz
 /ignore
 /hide
 /node_modules
 
-.asd
+!show/*.*
