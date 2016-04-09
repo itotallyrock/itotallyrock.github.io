@@ -15,6 +15,11 @@ body {
 	margin-top: calc(-20px + -33px);
 	border-bottom: 0px;
 }
+.nav a i::after {
+    content: ' ';
+    display: inline-block;
+    width: 10px;
+}
 .nav.dark a {
 	border: 1px solid rgb(28, 28, 38);
 	background-color: rgb(48, 48, 58);
