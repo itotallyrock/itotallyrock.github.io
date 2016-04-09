@@ -15,11 +15,6 @@ body {
 	border-bottom: 0px;
 	z-index: -10000;
 }
-.nav a:hover {
-	background-color: rgba(48, 48, 58, 1);
-	/*top: -5px;
-	position: relative;*/
-}
 .nav a i::after {
 	content: ' ';
 	display: inline-block;
@@ -52,4 +47,10 @@ body {
 	border: 1px solid rgb(28, 28, 38);
 	background-color: rgb(48, 48, 58);
 	color: #fff;
+}
+
+.nav a:hover {
+	background-color: rgba(48, 48, 58, 1);
+	/*top: -5px;
+	position: relative;*/
 }
