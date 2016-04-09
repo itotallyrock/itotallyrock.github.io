@@ -11,14 +11,18 @@ body {
 	margin: 5px;
 	text-decoration: none;
 	padding: 10px;
-	display: table;
 	margin-top: calc(-20px + -33px);
 	border-bottom: 0px;
+	z-index: -10000;
+}
+.nav a:hover {
+	top: -5px;
+	position: relative;
 }
 .nav a i::after {
-    content: ' ';
-    display: inline-block;
-    width: 10px;
+	content: ' ';
+	display: inline-block;
+	width: 10px;
 }
 .nav.dark a {
 	border: 1px solid rgb(28, 28, 38);
