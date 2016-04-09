@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="css/index.css" />
 </head>
 <body ng-app="app" ng-controller="appctrl">
-	<div class="nav dark" ng-include="'partials/nav.html'"></div>
     <div class="content dark">
+		<div class="nav dark" ng-include="'partials/nav.html'"></div>
         <h2>Home</h2>
 		<p>
 			Home page.
 			{{angular}}
-			{{type(app)}}
 		</p>
     </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
