@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
 </head>
-<body>
+<body ng-app="app" ng-controller="appctrl">
+	<div ng-include="../partials/nav.html"></div>
     <div class="content dark">
-		<div class="nav dark">
-            <a href="/" title="Home"><i class="fa fa-home"></i>Home</a>
-			<a href="/about" title="Home"><i class="fa fa-home"></i>About</a>
-			<a href="/team" title="Home"><i class="fa fa-home"></i>Team</a>
-        </div>
         <h2>Home</h2>
 		<p>
 			Home page.
+			{{angular}}
+			{{type(app)}}
 		</p>
     </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.3/angular.min.js"></script>
+	<!-- <script src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script> -->
+	<script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
