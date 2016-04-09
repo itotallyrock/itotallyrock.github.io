@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/team.css" />
 </head>
-<body>
-	<div class="content dark">
-		
+<body ng-app="app" ng-controller="appctrl">
+    <div class="content dark">
+		<div class="nav dark" ng-include="'partials/nav.html'">
+			<i class="fa fa-spin fa-cog"></i>
+		</div>
+        <h2>Team</h2>
 		<p>
 			Current Team
 			<ul>
@@ -20,6 +23,10 @@
 				<li>Jeffrey <i>"R0CK"</i> Meyer</li>
 			</ul>
 		</p>
-	</div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.3/angular.min.js"></script>
+	<!-- <script src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script> -->
+	<script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
