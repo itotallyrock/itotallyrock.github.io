@@ -1,13 +1,20 @@
 var KEY = "6C5EA48E95A3075DE48B76FBAD81B263";
 
+$(document).ready(function () {
+	if (localStorage.getItem("lastValue") !== null) {
+	    $("#steamid").val(localStorage.getItem("lastValue").toString().trim());
+	    $("[name=\"steam64id\"]").text($("#steamid").val());
+	}
+});
+
 var getUserGames = function(steamid, callback) {
     $.ajax({
         url: "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + KEY + "&steamid=" + steamid + "&include_appinfo=1&format=json"
-    }).done(callback).error(function () {
-		angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = true");
-		angular.element("[ng-controller=\"BodyController\"]").scope().$apply("finished = false");
-		angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = false");
-	});
+    }).done(callback).error(function() {
+        angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = true");
+        angular.element("[ng-controller=\"BodyController\"]").scope().$apply("finished = false");
+        angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = false");
+    });
 }
 
 var getCSV = function(array) {
@@ -52,14 +59,14 @@ app.controller("BodyController", ['$scope', function($scope) {
     $scope.finished = false;
     $scope.formatNumber = function(number) {
         let d = (number - Math.floor(number)).toPrecision(1);
-        return Math.floor(number) + d*10;
+        return Math.floor(number) + d * 10;
     };
 }]);
 
 
-$(".loading").on('click', function (event) {
-	angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = false");
-	angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = true");
+$(".loading").on('click', function(event) {
+    angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = false");
+    angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = true");
 });
 $("#steamid").on('keypress', function(event) {
     if (event.which == 13) {
@@ -67,17 +74,18 @@ $("#steamid").on('keypress', function(event) {
     }
 });
 $("#submit").on("click", function(event) {
-	console.log("Event");
-	angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = true");
-	angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = false");
+    console.log("Event");
+    angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = true");
+    angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = false");
     let steamid = $("[name=\"steam64id\"]").text().trim();
-	if (steamid.search(/(http(s|):\/\/|)steamcommunity\.com\/profiles\//g) == 0) {
-		$("[name=\"steam64id\"]").text(steamid.replace(/(http(s|):\/\/|)steamcommunity\.com\/profiles\//g, "").trim().replace("/",""));
-		$("#submit").trigger("click");
-	} else if (steamid.search(/(http(s|):\/\/|)steamcommunity\.com\/id\//g) == 0 || (isNaN(parseInt(steamid)))) {
+    localStorage.setItem("lastValue", $("#steamid").val().trim());
+    if (steamid.search(/(http(s|):\/\/|)steamcommunity\.com\/profiles\//g) == 0) {
+        $("[name=\"steam64id\"]").text(steamid.replace(/(http(s|):\/\/|)steamcommunity\.com\/profiles\//g, "").trim().replace("/", ""));
+        $("#submit").trigger("click");
+    } else if (steamid.search(/(http(s|):\/\/|)steamcommunity\.com\/id\//g) == 0 || (isNaN(parseInt(steamid)))) {
         let vanity = "";
         if (steamid.startsWith("http")) {
-            vanity = encodeURI(steamid.replace(/(http(s|):\/\/|)steamcommunity\.com\/id\//g, "").trim().replace("/",""));
+            vanity = encodeURI(steamid.replace(/(http(s|):\/\/|)steamcommunity\.com\/id\//g, "").trim().replace("/", ""));
         } else {
             vanity = encodeURI(steamid.trim());
         }
@@ -86,14 +94,14 @@ $("#submit").on("click", function(event) {
                 $("[name=\"steam64id\"]").text(data.response.steamid);
                 $("#submit").trigger("click");
             } else {
-				angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = true");
-				angular.element("[ng-controller=\"BodyController\"]").scope().$apply("finished = false");
-	        	angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = false");
-			}
-        }).error(function () {
-			angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = true");
-			angular.element("[ng-controller=\"BodyController\"]").scope().$apply("finished = false");
-        	angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = false");
+                angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = true");
+                angular.element("[ng-controller=\"BodyController\"]").scope().$apply("finished = false");
+                angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = false");
+            }
+        }).error(function() {
+            angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = true");
+            angular.element("[ng-controller=\"BodyController\"]").scope().$apply("finished = false");
+            angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = false");
         });
     } else if (steamid !== undefined || steamid !== "") {
         getUserGames(steamid, function(data) {
@@ -114,7 +122,7 @@ $("#submit").on("click", function(event) {
                     }
                 }
                 console.log("Total", (total / 100));
-				console.log("Average", ((total / priceData.length) / 100));
+                console.log("Average", ((total / priceData.length) / 100));
                 angular.element("[ng-controller=\"BodyController\"]").scope().$apply("total = " + (total / 100));
                 angular.element("[ng-controller=\"BodyController\"]").scope().$apply("average = " + ((total / data.response.games.length) / 100));
                 angular.element("[ng-controller=\"BodyController\"]").scope().$apply("games = " + JSON.stringify(games));
