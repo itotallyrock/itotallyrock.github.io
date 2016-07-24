@@ -71,10 +71,13 @@ $("#submit").on("click", function(event) {
 	angular.element("[ng-controller=\"BodyController\"]").scope().$apply("started = true");
 	angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = false");
     let steamid = $("[name=\"steam64id\"]").text().trim();
-    if (steamid.search(/(http(s|):\/\/|)steamcommunity\.com\/id\//g) == 0 || (isNaN(parseInt(steamid)))) {
+	if (steamid.search(/(http(s|):\/\/|)steamcommunity\.com\/profiles\//g) == 0) {
+		$("[name=\"steam64id\"]").text(steamid.replace(/(http(s|):\/\/|)steamcommunity\.com\/profiles\//g, "").trim().replace("/",""));
+		$("#submit").trigger("click");
+	} else if (steamid.search(/(http(s|):\/\/|)steamcommunity\.com\/id\//g) == 0 || (isNaN(parseInt(steamid)))) {
         let vanity = "";
         if (steamid.startsWith("http")) {
-            vanity = encodeURI(steamid.replace(/(http(s|):\/\/|)steamcommunity\.com\/id\//g, "").trim());
+            vanity = encodeURI(steamid.replace(/(http(s|):\/\/|)steamcommunity\.com\/id\//g, "").trim().replace("/",""));
         } else {
             vanity = encodeURI(steamid.trim());
         }
