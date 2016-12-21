@@ -1,0 +1,68 @@
+html,body { height:100%; }
+
+body {
+	font-family: calibri, helvetica, sans-serif;
+	margin: 0px;
+	background-color: #7ac1e4;
+	overflow: hidden;
+}
+
+div.content {
+	width: 30%;
+	margin: 10px auto;
+	background-color: #fff;
+	padding: 5px 50px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-device-width: 800px) {
+	body {
+		background-color: #fff;
+		overflow-y: auto;
+	}
+	div.content {
+		width: 100%;
+		font-size: 2em;
+		box-shadow: none;
+	}
+	.quality .hero {
+		width: 10%;
+	}
+}
+
+h2 .subtitle {
+	font-weight: normal;
+	color: rgba(0,0,0,0.5);
+	font-size: 1em;
+}
+
+.quality {
+	font-weight: bold;
+	display: block;
+}
+
+.quality.quality-orange {
+	color: #e79903;
+}
+
+.quality.quality-pink {
+	color: #ec4feb;
+}
+
+.quality.quality-blue {
+	color: #2299ee;
+}
+
+.quality .price {
+	margin: 0px 5px;
+	color: rgba(0, 0, 0, 0.5);
+	float:right;
+}
+
+.quality .hero {
+	display: inline-flex;
+	width: 30%;
+	margin: 0px 5px;
+}

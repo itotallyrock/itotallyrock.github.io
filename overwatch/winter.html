@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Holiday Event Checklist</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="content">
+		<h1>Holiday Event Checklist</h1>
+		<section>
+			<h2>Skins <span class="subtitle price">20250</span></h2>
+			<div class="checklist">
+				<!--Legendary Skins-->
+				<label class="quality quality-orange"><input type="checkbox" id="Mei-rry" value=""><div class="hero">Mei</div>Mei-rry<span class="price">3000</span></label>
+				<label class="quality quality-orange"><input type="checkbox" id="Santaclad" value=""><div class="hero">Torbjorn</div>Santaclad<span class="price">3000</span></label>
+				<label class="quality quality-orange"><input type="checkbox" id="Jingle" value=""><div class="hero">Tracer</div>Jingle<span class="price">3000</span></label>
+				<label class="quality quality-orange"><input type="checkbox" id="Yeti" value=""><div class="hero">Winston</div>Yeti<span class="price">3000</span></label>
+				<label class="quality quality-orange"><input type="checkbox" id="Nutcracker" value=""><div class="hero">Zenyatta</div>Nutcracker<span class="price">3000</span></label>
+
+				<!--Rare Skins-->
+				<label class="quality quality-pink"><input type="checkbox" id="Andes" value=""><div class="hero">Lucio</div>Andes<span class="price">750</span></label>
+				<label class="quality quality-pink"><input type="checkbox" id="Scrooge" value=""><div class="hero">McCree</div>Scrooge<span class="price">750</span></label>
+				<label class="quality quality-pink"><input type="checkbox" id="Frostbite" value=""><div class="hero">Pharah</div>Frostbite<span class="price">750</span></label>
+				<label class="quality quality-pink"><input type="checkbox" id="Shiver" value=""><div class="hero">Reaper</div>Shiver<span class="price">750</span></label>
+				<label class="quality quality-pink"><input type="checkbox" id="Rudolph" value=""><div class="hero">RoadHog</div>Rudolph<span class="price">750</span></label>
+				<label class="quality quality-pink"><input type="checkbox" id="Peppermint" value=""><div class="hero">Sombra</div>Peppermint<span class="price">750</span></label>
+				<label class="quality quality-pink"><input type="checkbox" id="Frosted" value=""><div class="hero">Zarya</div>Frosted<span class="price">750</span></label>
+			</div>
+		</section>
+
+		<section>
+			<h2>Emotes <span class="subtitle price">4500</span></h2>
+			<div class="checklist">
+				<!--Emotes-->
+				<label class="quality quality-pink"><input type="checkbox" id="Hat-Trick" value=""><div class="hero">McCree</div>Hat Trick<span class="price">750</span></label>
+				<label class="quality quality-pink"><input type="checkbox" id="Snowman" value=""><div class="hero">Mei</div>Snowman<span class="price">750</span></label>
+				<label class="quality quality-orange"><input type="checkbox" id="Mystery-Gift" value=""><div class="hero">Zarya</div>Mystery Gift<span class="price">3000</span></label>
+			</div>
+		</section>
+
+		<section>
+			<h2>Highlight Intros <span class="subtitle price">1500</span></h2>
+			<div class="checklist">
+				<!--Highlight Intros-->
+				<label class="quality quality-pink"><input type="checkbox" id="Snowflakes" value=""><div class="hero">Symmetra</div>Snowflakes<span class="price">750</span></label>
+				<label class="quality quality-pink"><input type="checkbox" id="Misletoe" value=""><div class="hero">WidowMaker</div>Misletoe<span class="price">750</span></label>
+			</div>
+		</section>
+
+		<section>
+			<h2>Victory Poses <span class="subtitle price">1575</span></h2>
+			<div class="checklist">
+				<!--Victory Poses-->
+				<label class="quality quality-blue"><input type="checkbox" id="Festive" value=""><div class="hero">D.VA</div>Festive<span class="price">225</span></label>
+				<label class="quality quality-blue"><input type="checkbox" id="Misletoe" value=""><div class="hero">Mercy</div>Misletoe<span class="price">225</span></label>
+				<label class="quality quality-blue"><input type="checkbox" id="Toast-Ana" value=""><div class="hero">Ana</div>Toast<span class="price">225</span></label>
+				<label class="quality quality-blue"><input type="checkbox" id="Toast-Soldier" value=""><div class="hero">Soldier:76</div>Toast<span class="price">225</span></label>
+				<label class="quality quality-blue"><input type="checkbox" id="Toast-Pharah" value=""><div class="hero">Pharah</div>Toast<span class="price">225</span></label>
+				<label class="quality quality-blue"><input type="checkbox" id="Toast-Reinhardt" value=""><div class="hero">Reinhardt</div>Toast<span class="price">225</span></label>
+				<label class="quality quality-blue"><input type="checkbox" id="Toast-Torbjorn" value=""><div class="hero">Torbjorn</div>Toast<span class="price">225</span></label>
+			</div>
+		</section>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+	<script>
+		let contentPadding = Number($("div.content").css('padding').split(' ')[0].substring(0, $("div.content").css('padding').split(' ')[0].indexOf('px')));
+		// $(document).ready(() => {
+		// 	console.log(($(window).height() + (2*contentPadding) - 10));
+		// 	$("div.content").css('height', ($(window).height() + (2*contentPadding) - 10) + 'px');
+		// });
+		// $(window).on('resize', () => {
+		// 	console.log(($(window).height() + (2*contentPadding) - 10));
+		// 	$("div.content").css('height', ($(window).height() + (2*contentPadding) - 10) + 'px');
+		// });
+	</script>
+	<script src="./numbers.js" charset="utf-8"></script>
+	<script src="./save.js" charset="utf-8"></script>
+</body>
+
+</html>
