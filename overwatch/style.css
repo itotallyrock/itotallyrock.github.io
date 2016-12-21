@@ -27,6 +27,9 @@ div.content {
 		font-size: 2em;
 		box-shadow: none;
 	}
+	.quality input[type="checkbox"] {
+		transform: scale(1.5);
+	}
 	.quality .hero {
 		width: 10%;
 	}
