@@ -1,6 +1,3 @@
-// XXX: Format Name#Numbers as Name-Numbers
-$.getJSON('https://owapi.net/api/v3/u/R0CK-11386/stats')
-
 let sampleData = [
   // Day/Month/Year
   [null, 'KBDShadow#55285', 'R0CK#11386'],
@@ -59,5 +56,16 @@ let createGraph = (datapoints) => {
 }
 
 $(document).ready(() => {
+  $('#submit').on('click', (event) => {
+    // TODO: Some form validation
+    let battletag = $('#battletag').val()
+    $.getJSON('https://owapi.net/api/v3/u/' + encodeURI(battletag.replace('#', '-')) + '/stats').then((json) => {
+      let tier = json.us.stats.competitive.overall_stats.tier
+      let rank = json.us.stats.competitive.overall_stats.comprank
+      alert('Current Comp Skill Rating (' + tier[0].toUpperCase() + tier.substring(1) + '): ' + rank)
+    }).catch((err) => {
+      // TODO: Failed to fetch stats...
+    })
+  })
   createGraph(sampleData)
 })

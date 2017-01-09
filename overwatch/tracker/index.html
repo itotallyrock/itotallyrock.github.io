@@ -49,11 +49,11 @@
     <section class="container" id="userform">
       <h1 class="title">How to use.</h1>
       <p class="description">First thing you want to do is get your BattleNET tag.  After that yu simply place type it into the box below and then press <kbd>Enter</kbd></p>
-      <form>
+      <form method="post" id="form">
         <fieldset>
           <label for="battletag">BattleNET Tag</label>
           <input type="text" name="battletag" id="battletag">
-          <input type="submit" class="button button-outline" value="Get Stats">
+          <a href="#graphs" class="button button-outline" id="submit">Get Stats</a>
         </fieldset>
       </form>
     </section>
