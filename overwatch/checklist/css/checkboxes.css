@@ -1,0 +1,27 @@
+.category .item.legendary {
+  color: #f0ad4e;
+}
+.category .item.epic {
+  color: #e92ef5;
+}
+.category .item.rare {
+  color: #428bca;
+}
+.category .item.common {
+  color: inherit;
+}
+.category .item span[class*="item-"] {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  /*Fix wrapping for small screens*/
+}
+.pretty i:after {
+  margin-left: -1px;
+  margin-top: -1px;
+}
+.pretty > input[type="checkbox"] {
+  left: -10px;
+}
+.pretty input:checked+label {
+  text-decoration: line-through;
+}
