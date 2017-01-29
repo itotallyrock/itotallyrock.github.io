@@ -1,0 +1,186 @@
+{
+    "winter": {
+        "skins": {
+            "total": 0,
+            "items": [{
+                "name": "Mei-rry Christmas",
+                "hero": "Mei",
+                "tier": "legendary",
+                "price": 3000,
+                "icon": "",
+                "owned": false
+            }]
+        }
+    },
+    "rooster": {
+        "total": 26325,
+        "skins": {
+            "total": 24750,
+            "items": [{
+                    "name": "Tal",
+                    "hero": "Ana",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                        "name": "Firework",
+                        "hero": "Junkrat",
+                        "tier": "epic",
+                        "price": 750,
+                        "icon": "",
+                        "owned": false
+                },
+                {
+                    "name": "Rooster",
+                    "hero": "Bastion",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Golden",
+                    "hero": "Mercy",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Qipao",
+                    "hero": "Symmetra",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Rose",
+                    "hero": "Tracer",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Palanquin",
+                    "hero": "D.Va",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Chang'e",
+                    "hero": "Mei",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Luna",
+                    "hero": "Mei",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Wujing",
+                    "hero": "Reinhardt",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Bajie",
+                    "hero": "Roadhog",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Wukong",
+                    "hero": "Winston",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Sanzan",
+                    "hero": "Zenyatta",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                }
+            ]
+        },
+        "vistory poses": {
+            "total": 1575,
+            "items": [{
+                    "name": "Folded Hands",
+                    "hero": "Ana",
+                    "tier": "Rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Fireworks",
+                    "hero": "Bastion",
+                    "tier": "Rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Lucky Pouch",
+                    "hero": "D.Va",
+                    "tier": "Rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Bad for Your Health",
+                    "hero": "Junkrat",
+                    "tier": "Rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Lucky!",
+                    "hero": "Mei",
+                    "tier": "Rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "What's mine is mine",
+                    "hero": "Roadhog",
+                    "tier": "Rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Sparklers",
+                    "hero": "Sombra",
+                    "tier": "Rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                }
+            ]
+        }
+    }
+}
