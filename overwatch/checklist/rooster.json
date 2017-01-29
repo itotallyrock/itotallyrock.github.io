@@ -13,9 +13,9 @@
         }
     },
     "rooster": {
-        "total": 26325,
+        "total": 31575,
         "skins": {
-            "total": 24750,
+            "total": 21500,
             "items": [{
                     "name": "Tal",
                     "hero": "Ana",
@@ -181,6 +181,64 @@
                     "owned": false
                 }
             ]
+        },
+        "highlight intros": {
+          "total": 2250,
+          "items": [
+            {
+                "name": "Feast",
+                "hero": "Roadhog",
+                "tier": "Epic",
+                "price": 750,
+                "icon": "",
+                "owned": false
+            },
+            {
+                "name": "Fortune",
+                "hero": "Mercy",
+                "tier": "Epic",
+                "price": 750,
+                "icon": "",
+                "owned": false
+            },
+            {
+                "name": "Lion Dance",
+                "hero": "Tracer",
+                "tier": "Epic",
+                "price": 750,
+                "icon": "",
+                "owned": false
+            }
+          ]
+        },
+        "emotes": {
+          "total": 2250,
+          "items": [
+            {
+                "name": "Bow",
+                "hero": "D.Va",
+                "tier": "Epic",
+                "price": 750,
+                "icon": "",
+                "owned": false
+            },
+            {
+                "name": "Dud?",
+                "hero": "Junkrat",
+                "tier": "Epic",
+                "price": 750,
+                "icon": "",
+                "owned": false
+            },
+            {
+                "name": "So Excited",
+                "hero": "Mei",
+                "tier": "Epic",
+                "price": 750,
+                "icon": "",
+                "owned": false
+            }
+          ]
         }
     }
 }
