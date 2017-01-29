@@ -127,7 +127,7 @@
             "items": [{
                     "name": "Folded Hands",
                     "hero": "Ana",
-                    "tier": "Rare",
+                    "tier": "rare",
                     "price": 225,
                     "icon": "",
                     "owned": false
@@ -135,7 +135,7 @@
                 {
                     "name": "Fireworks",
                     "hero": "Bastion",
-                    "tier": "Rare",
+                    "tier": "rare",
                     "price": 225,
                     "icon": "",
                     "owned": false
@@ -143,7 +143,7 @@
                 {
                     "name": "Lucky Pouch",
                     "hero": "D.Va",
-                    "tier": "Rare",
+                    "tier": "rare",
                     "price": 225,
                     "icon": "",
                     "owned": false
@@ -151,7 +151,7 @@
                 {
                     "name": "Bad for Your Health",
                     "hero": "Junkrat",
-                    "tier": "Rare",
+                    "tier": "rare",
                     "price": 225,
                     "icon": "",
                     "owned": false
@@ -159,7 +159,7 @@
                 {
                     "name": "Lucky!",
                     "hero": "Mei",
-                    "tier": "Rare",
+                    "tier": "rare",
                     "price": 225,
                     "icon": "",
                     "owned": false
@@ -167,7 +167,7 @@
                 {
                     "name": "What's mine is mine",
                     "hero": "Roadhog",
-                    "tier": "Rare",
+                    "tier": "rare",
                     "price": 225,
                     "icon": "",
                     "owned": false
@@ -175,7 +175,7 @@
                 {
                     "name": "Sparklers",
                     "hero": "Sombra",
-                    "tier": "Rare",
+                    "tier": "rare",
                     "price": 225,
                     "icon": "",
                     "owned": false
@@ -188,7 +188,7 @@
             {
                 "name": "Feast",
                 "hero": "Roadhog",
-                "tier": "Epic",
+                "tier": "epic",
                 "price": 750,
                 "icon": "",
                 "owned": false
@@ -196,7 +196,7 @@
             {
                 "name": "Fortune",
                 "hero": "Mercy",
-                "tier": "Epic",
+                "tier": "epic",
                 "price": 750,
                 "icon": "",
                 "owned": false
@@ -204,7 +204,7 @@
             {
                 "name": "Lion Dance",
                 "hero": "Tracer",
-                "tier": "Epic",
+                "tier": "epic",
                 "price": 750,
                 "icon": "",
                 "owned": false
@@ -217,7 +217,7 @@
             {
                 "name": "Bow",
                 "hero": "D.Va",
-                "tier": "Epic",
+                "tier": "epic",
                 "price": 750,
                 "icon": "",
                 "owned": false
@@ -225,7 +225,7 @@
             {
                 "name": "Dud?",
                 "hero": "Junkrat",
-                "tier": "Epic",
+                "tier": "epic",
                 "price": 750,
                 "icon": "",
                 "owned": false
@@ -233,7 +233,7 @@
             {
                 "name": "So Excited",
                 "hero": "Mei",
-                "tier": "Epic",
+                "tier": "epic",
                 "price": 750,
                 "icon": "",
                 "owned": false
