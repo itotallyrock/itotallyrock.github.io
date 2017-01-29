@@ -35,7 +35,7 @@ let app = new Vue({
     fetchLists: function() {
       let self = this
       if (localStorage.getItem('lootboxes') == null) {
-        let checklist = 'https://rawgit.com/itotallyrock/itotallyrock.github.io/master/overwatch/checklist/rooster.json'
+        let checklist = 'https://rawgit.com/itotallyrock/itotallyrock.github.io/master/overwatch/checklist/itemlist.json'
         $.getJSON(checklist).then((lootboxes) => {
           // TODO: Sort lootboxes put checked at the bottom of category and by decending value
           localStorage.setItem('lootboxes', JSON.stringify(lootboxes))
