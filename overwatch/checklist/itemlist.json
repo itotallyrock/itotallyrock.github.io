@@ -321,14 +321,6 @@
                     "owned": false
                 },
                 {
-                    "name": "NAME",
-                    "hero": "HERO",
-                    "tier": "common",
-                    "price": 75,
-                    "icon": "",
-                    "owned": false
-                },
-                {
                     "name": "I Keep the Peace",
                     "hero": "Pharah",
                     "tier": "common",
