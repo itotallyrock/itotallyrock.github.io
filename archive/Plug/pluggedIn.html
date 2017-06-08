@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>PluggedIn - A PlugDJ Addon</title>
+
+	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+	<link href="css/bootstrap.original.min.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	
+	<style>
+		.bs-callout{padding:20px;margin:20px 0;border:1px solid #eee;border-left-width:5px;border-radius:3px}.bs-callout h4{margin-top:0;margin-bottom:5px}.bs-callout p:last-child{margin-bottom:0}.bs-callout code{border-radius:3px}.bs-callout+.bs-callout{margin-top:-5px}.bs-callout-danger{border-left-color:#d9534f}.bs-callout-danger h4{color:#d9534f}.bs-callout-warning{border-left-color:#f0ad4e}.bs-callout-warning h4{color:#f0ad4e}.bs-callout-info{border-left-color:#5bc0de}.bs-callout-info h4{color:#5bc0de}.bs-callout-success{border-left-color:#5cb85c}.bs-callout-success h4{color:#5cb85c}
+	</style>
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<ul style="list-style:none;">
+			<h1 style="display:inline">PluggedIn</h1>
+			<li style="line-height: 9px;display: inline;vertical-align: text-top;font-size: 18px;margin: 0px 10px;"><a href="#versions">Versions <i class="fa fa-flask"></i></a></li>
+			<li style="line-height: 9px;display: inline;vertical-align: text-top;font-size: 18px;margin: 0px 10px;"><a href="#consoleUsage">Usage <i class="fa fa-terminal"></i></a></li>
+			<li style="line-height: 9px;display: inline;vertical-align: text-top;font-size: 18px;margin: 0px 10px;"><a href="#statistics">Statistics <i class="fa fa-bar-chart"></i></a></li>
+			<li style="line-height: 9px;display: inline;vertical-align: text-top;font-size: 18px;margin: 0px 10px;"><a href="#todo">Upcoming Features <i class="fa fa-list-ul"></i></a></li>
+			<li style="line-height: 9px;display: inline;vertical-align: text-top;font-size: 18px;margin: 0px 10px;float: right;margin-top: 18px;"><a href="http://github.com/itotallyrock/pluggedIn">Github <i class="fa fa-github-alt"></i></a></li>
+		</ul>
+		<hr/>
+		<h2 id="versions">Versions</h2>
+		<blockquote class="bs-callout bs-callout-success">
+			<h4>Latest Stable <span style="font-family:monospace;">0.00.4</span></h4>
+			<p>Keyboard shortcut <kbd>V</kbd> press and hold to run spamDJ</p>
+			<a href="javascript:$.getScript('https://cdn.rawgit.com/itotallyrock/pluggedIn/master/f0b949f88220f87fa476a960b605795c83f866bf/pluggedIn.js');" onclick="alert('Drag to your bookmarks');return false;" class="btn btn-success">PluggedIn</a>
+		</blockquote>
+		<blockquote class="bs-callout bs-callout-warning">
+			<h4>Latest Unstable (Tested Slightly) <span style="font-family:monospace;">0.00.9</span></h4>
+			<p>More organization. And Many Fixes</p>
+			<a href="javascript:$.getScript('https://cdn.rawgit.com/itotallyrock/pluggedIn/master/2478514385ae3fdd14ec13a7415c61c274c7e53a/pluggedIn.js');" onclick="alert('Drag to your bookmarks');return false;" class="btn btn-warning">PluggedIn</a>
+		</blockquote>
+		<blockquote class="bs-callout bs-callout-danger">
+			<h4>Latest Unstable (Cutting Edge) <span style="font-family:monospace;" id="cuttingEdge"></span></h4>
+			<p>Will always be the latest version commited</p>
+			<a href="javascript:(function(){$.getScript('https://rawgit.com/itotallyrock/pluggedIn/master/js/pluggedIn.js');}());" class="btn btn-danger">PluggedIn</a>
+		</blockquote>
+		<hr/>
+		<h2 id="consoleUsage">Console Usage</h2>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Functionality</th>
+					<th>Console Input</th>
+					<th>Info</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>AutoWoot</td>
+					<td><code>pluggedIn.core.autoWoot()</code></td>
+					<td>Will automatically <em>woot</em> the current DJ every DJ update</td>
+				</tr>
+				<tr>
+					<td>Auto DJ</td>
+					<td><code>pluggedIn.core.autoDJ()</code></td>
+					<td>Will attempt to join the waitlist after each DJ update</td>
+				</tr>
+				<tr>
+				<td>Spam DJ</td>
+					<td>Press and hold <kbd>v</kbd></td>
+					<td>Will spam click the Join Waitlist button</td>
+				</tr>
+				<tr>
+					<td>Save Settings</td>
+					<td><code>pluggedIn.core.saveSettings()</code></td>
+					<td>Will Save All Default (or current Settings)</td>
+				</tr>
+				<tr>
+					<td>Reset Settings</td>
+					<td><code>pluggedIn.core.eraseCookie("pluggedIn")</code></td>
+					<td>Will erase all saved data</td>
+				</tr>
+				<tr>
+					<td>Changing Settings</td>
+					<td><code>pluggedIn.settings.SETTING</code></td>
+					<td>Replace SETTING with the item you would like to change (remember to save afterwards)</td>
+				</tr>
+				<tr>
+					<td>Changing Background</td>
+					<td><code>pluggedIn.gui.changeBackground("URL")</code></td>
+					<td>Will replace the room background with URL</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr/>
+		<h2 id="statistics">Statistics</h2>
+		Coming Soon.
+		<h4>Times Active: <span style="font-family:monospace;" id="uses_total">filler</span></h4>
+		<hr/>
+		<h2 id="todo">Upcoming Features</h2>
+		<ul>
+			<li>Finished Navigation</li>
+			<li>More options for chat notifications.</li>
+			<li>Better Background Settings.</li>
+			<li>Language Support (This will be hard and may take a long time.)</li>
+		</ul>
+	</div>
+</body>
+<script>
+	$.ajax({
+		url:"https://rawgit.com/itotallyrock/pluggedIn/master/data.json",
+		async:false,
+		success:function(e){
+			$("#cuttingEdge").text(e.version);
+		}
+	});
+</script>
+</html>

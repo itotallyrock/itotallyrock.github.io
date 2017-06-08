@@ -1,0 +1,21 @@
+{
+    "env": {
+        "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "impliedStrict": true
+      }
+    },
+    "extends": "standard",
+    "rules": {
+        "no-warning-comments": [
+            "warn"
+        ],
+        "no-console": [
+            "warn"
+        ]
+    }
+}

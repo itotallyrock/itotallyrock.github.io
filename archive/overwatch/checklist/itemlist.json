@@ -1,0 +1,430 @@
+{
+    "winter": {
+        "skins": {
+            "total": 0,
+            "items": [{
+                "name": "Mei-rry Christmas",
+                "hero": "Mei",
+                "tier": "legendary",
+                "price": 3000,
+                "icon": "",
+                "owned": false
+            }]
+        }
+    },
+    "rooster": {
+        "total": 31575,
+        "skins": {
+            "total": 21500,
+            "items": [{
+                    "name": "Tal",
+                    "hero": "Ana",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Firework",
+                    "hero": "Junkrat",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Rooster",
+                    "hero": "Bastion",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Golden",
+                    "hero": "Mercy",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Qipao",
+                    "hero": "Symmetra",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Rose",
+                    "hero": "Tracer",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Palanquin",
+                    "hero": "D.Va",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Chang'e",
+                    "hero": "Mei",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Luna",
+                    "hero": "Mei",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Wujing",
+                    "hero": "Reinhardt",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Bajie",
+                    "hero": "Roadhog",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Wukong",
+                    "hero": "Winston",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Sanzan",
+                    "hero": "Zenyatta",
+                    "tier": "legendary",
+                    "price": 3000,
+                    "icon": "",
+                    "owned": false
+                }
+            ]
+        },
+        "vistory poses": {
+            "total": 1575,
+            "items": [{
+                    "name": "Folded Hands",
+                    "hero": "Ana",
+                    "tier": "rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Fireworks",
+                    "hero": "Bastion",
+                    "tier": "rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Lucky Pouch",
+                    "hero": "D.Va",
+                    "tier": "rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Bad for Your Health",
+                    "hero": "Junkrat",
+                    "tier": "rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Lucky!",
+                    "hero": "Mei",
+                    "tier": "rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "What's mine is mine",
+                    "hero": "Roadhog",
+                    "tier": "rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Sparklers",
+                    "hero": "Sombra",
+                    "tier": "rare",
+                    "price": 225,
+                    "icon": "",
+                    "owned": false
+                }
+            ]
+        },
+        "highlight intros": {
+            "total": 2250,
+            "items": [{
+                    "name": "Feast",
+                    "hero": "Roadhog",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Fortune",
+                    "hero": "Mercy",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Lion Dance",
+                    "hero": "Tracer",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                }
+            ]
+        },
+        "emotes": {
+            "total": 2250,
+            "items": [{
+                    "name": "Bow",
+                    "hero": "D.Va",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Dud?",
+                    "hero": "Junkrat",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "So Excited",
+                    "hero": "Mei",
+                    "tier": "epic",
+                    "price": 750,
+                    "icon": "",
+                    "owned": false
+                }
+            ]
+        },
+        "voice lines": {
+            "total": 1725,
+            "items": [{
+                    "name": "The Moon in Winter",
+                    "hero": "Ana",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Woop Doo Woo Dun Woop",
+                    "hero": "Bastion",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "The Best Things in Life",
+                    "hero": "D.Va",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "To Know Yourself",
+                    "hero": "Genji",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "When the Moon is Full",
+                    "hero": "Hanzo",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Gong Xi Fa Cai",
+                    "hero": "Junkrat",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "I Make This Look Good",
+                    "hero": "Lucio",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Calls for a Celebration",
+                    "hero": "McCree",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Wishing You Prosperity",
+                    "hero": "Mei",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "A Most Impressive Display",
+                    "hero": "Mercy",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "I Keep the Peace",
+                    "hero": "Pharah",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Now Those Are Fireworks",
+                    "hero": "Reaper",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Are You Chicken?",
+                    "hero": "Reinhardt",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "You Chicken?",
+                    "hero": "Roadhod",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "The Rooster Crows",
+                    "hero": "Soldier",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "You're Easily Impressed",
+                    "hero": "Sombra",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Good Fortune",
+                    "hero": "Symmetra",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Too Hot For You?",
+                    "hero": "Torbjorn",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Ready For Some Fireworks?",
+                    "hero": "Tracer",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "You Have My Attention",
+                    "hero": "Widowmaker",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "That Was Awesome!",
+                    "hero": "Winston",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Get Pumped",
+                    "hero": "Zarya",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                },
+                {
+                    "name": "Every Rooster Crows",
+                    "hero": "Zenyatta",
+                    "tier": "common",
+                    "price": 75,
+                    "icon": "",
+                    "owned": false
+                }
+            ]
+        }
+    }
+}
