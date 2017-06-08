@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 var getUserGames = function(steamid, callback) {
     $.ajax({
-        url: "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + KEY + "&steamid=" + steamid + "&include_appinfo=1&format=json"
+        url: "https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + KEY + "&steamid=" + steamid + "&include_appinfo=1&format=json"
     }).done(callback).error(function() {
         angular.element("[ng-controller=\"BodyController\"]").scope().$apply("failed = true");
         angular.element("[ng-controller=\"BodyController\"]").scope().$apply("finished = false");
@@ -44,7 +44,7 @@ var getTotalValue = function(games) {
 var getGamesPrice = function(games, callback) {
     var id = getCSV(games);
     $.ajax({
-        url: "http://store.steampowered.com/api/appdetails/?appids=" + id + "&filters=price_overview",
+        url: "https://store.steampowered.com/api/appdetails/?appids=" + id + "&filters=price_overview",
     }).done(callback);
 };
 
